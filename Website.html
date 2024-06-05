@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Cao</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .container p {
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+        }
+        .container a {
+            margin: 0 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+        }
+        .container a:hover {
+            text-decoration: underline;
+        }
+        .emoji-wave {
+            display: inline-block;
+            animation: wave-animation 2s infinite;
+            transform-origin: 70% 70%;
+        }
+        @keyframes wave-animation {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(14deg); }
+            20% { transform: rotate(-8deg); }
+            30% { transform: rotate(14deg); }
+            40% { transform: rotate(-4deg); }
+            50% { transform: rotate(10deg); }
+            60% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello! I'm Tony <span class="emoji-wave">👋</span></h1>
+        <p>Recent graduate from the University of Illinois at Chicago with a B.S. in Computer Science. Passionate about AI, software development, and game design.</p>
+        <div>
+            <a href="https://github.com/TonyCao368">GitHub</a>
+            <a href="https://www.linkedin.com/in/tonycao368/">LinkedIn</a>
+        </div>
+        <footer>&copy; Tony Cao 2024</footer>
+    </div>
+</body>
+</html>
