@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tony Cao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             display: flex;
@@ -11,12 +13,16 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Karla', sans-serif;
             background-color: #ffffff;
             color: #333333;
+            padding: 10px;
+            box-sizing: border-box;
         }
         .container {
             text-align: center;
+            max-width: 600px;
+            width: 100%;
         }
         .container h1 {
             font-size: 2.5em;
@@ -55,6 +61,17 @@
             margin-top: 50px;
             font-size: 0.9em;
         }
+        @media (max-width: 600px) {
+            .container h1 {
+                font-size: 2em;
+            }
+            .container p {
+                font-size: 1em;
+            }
+            .container a {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -62,8 +79,8 @@
         <h1>Hello! I'm Tony <span class="emoji-wave">👋</span></h1>
         <p>Recent graduate from the University of Illinois at Chicago with a B.S. in Computer Science. Passionate about AI, software development, and game design.</p>
         <div>
-            <a href="https://github.com/TonyCao368">GitHub</a>
-            <a href="https://www.linkedin.com/in/tonycao368/">LinkedIn</a>
+            <a href="https://github.com/TonyCao368" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/tonycao368/" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
         <footer>&copy; Tony Cao 2024</footer>
     </div>
